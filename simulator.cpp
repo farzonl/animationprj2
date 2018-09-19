@@ -198,7 +198,7 @@ void ParticleSystem::apply(std::vector<Particle> &particles, float timeStep,Inte
     }
 }
 
-Simulator::Simulator() : ps() {
+Simulator::Simulator() : ps(), methodId(0) {
     // initialize the particles
     mParticles.resize(2);
     reset();
@@ -228,6 +228,10 @@ double Simulator::getTimeStep() {
     return mTimeStep;
 }
 
+void Simulator::setIntegrationMethod(int methodId) {
+    this->methodId = methodId;
+}
+
 void Simulator::reset() {
     mParticles[0].mPosition[1] = 0.0;
     mParticles[0].mPosition[0] = 0.2;
@@ -251,7 +255,17 @@ void Simulator::simulate() {
     for (int i = 0; i < mParticles.size(); i++) {
         mParticles[i].mAccumulatedForce[1] += Equations::EARTH_GRAVITY * mParticles[i].mMass;
     }
-    ps.apply(mParticles,mTimeStep);
+    switch(this->methodId) {
+        case 1:
+            ps.apply(mParticles,mTimeStep,IntegraionMethod::explicitEuler);
+            break;
+        case 2:
+            ps.apply(mParticles,mTimeStep,IntegraionMethod::implicitEuiler);
+            break;
+        default:
+            ps.apply(mParticles,mTimeStep);
+            break;
+    }
 
     //std::cout << "P1 mAccumulatedForce after: \n" << mParticles[0].mAccumulatedForce << std::endl;
     //std::cout << "P2 mAccumulatedForce after: \n" << mParticles[2].mAccumulatedForce << std::endl;

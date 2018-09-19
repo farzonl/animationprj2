@@ -73,10 +73,12 @@ public:
     double getTimeStep();
     
     void reset();
+    void setIntegrationMethod(int methodId);
 private:
     double mTimeStep;       // time step
     std::vector<Particle> mParticles;
     ParticleSystem ps;
+    int methodId;
     
 };
 

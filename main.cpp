@@ -48,6 +48,14 @@ void DrawBackground();
 // main function
 int main(int argc, char *argv[])
 {
+    std::cout << "pick your integration method.\n";
+    std::cout << "1 for explicit euler\n";
+    std::cout << "2 for implicit euler\n";
+    std::cout << "0 or any key other key not defined for midpoint" << endl;
+    int methodId = 0;
+    std::cin >> methodId;
+    cout << "The value you entered is: " << methodId << endl;
+    mySimulator.setIntegrationMethod(methodId);
     glutInit(&argc, argv);
     glutInitWindowSize(window_width, window_height);
     glutInitDisplayMode(GLUT_DOUBLE|GLUT_RGBA|GLUT_DEPTH);
