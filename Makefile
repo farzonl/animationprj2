@@ -1,14 +1,15 @@
-CXX    = g++
-CFLAGS = -O2
+CFLAGS = -coverage -O2 -std=c++11
 INCLUDES = -I ./
 
 TARGET = main.out
 ifeq ($(OS),Windows_NT) 
 	LIBS_GL = -lfreeglut -lglu32 -lopengl32		#Windows
 	TARGET = main.exe	
-else ifeq ($(shell uname -s),Darwin)	
+else ifeq ($(shell uname -s),Darwin)
+	CXX = clang++
 	LIBS_GL = -framework OpenGL -framework GLUT	#Mac
-else	
+else
+	CXX = g++	
 	LIBS_GL = -lglut -lGL -lGLU			#Linux(defalut)
 endif
 
@@ -19,9 +20,9 @@ OBJS =$(SOURCES:%.cpp=%.o)
 all: $(TARGET)
 					
 $(TARGET): $(OBJS) $(HEADERS)
-	$(CXX)  -o $@ $(OBJS) $(LIBS_GL)
+	$(CXX)  $(CFLAGS) -o $@ $(OBJS) $(LIBS_GL)
 
 clean:
-	-rm -f $(OBJS)
+	-rm -f $(OBJS)  *.gcov *.gcda *.gcno
 .cpp.o:
-	$(CXX) $(INCLUDES) -c $<
+	$(CXX) $(CFLAGS) $(INCLUDES) -c $<

@@ -1,6 +1,7 @@
 #include <string>
 #include <iostream>
 #include <stdlib.h>
+#include <stdio.h>
 
 #if defined(__APPLE__) && defined(__MACH__)
 #include <GLUT/glut.h>
@@ -54,7 +55,7 @@ int main(int argc, char *argv[])
     std::cout << "0 or any key other key not defined for midpoint" << endl;
     int methodId = 0;
     std::cin >> methodId;
-    cout << "The value you entered is: " << methodId << endl;
+    std::cout << "The value you entered is: " << methodId << endl;
     mySimulator.setIntegrationMethod(methodId);
     glutInit(&argc, argv);
     glutInitWindowSize(window_width, window_height);
@@ -186,9 +187,9 @@ void myGlutKeyboard(unsigned char key, int x, int y) {
 void myGlutMouse(int button, int state, int x, int y) {
     mouse_down = (state == GLUT_DOWN);
     if(button == GLUT_LEFT_BUTTON && state == GLUT_DOWN) {
-        cout << "Left Mouse Clicked" << endl;
+        std::cout << "Left Mouse Clicked" << endl;
     } else if (button == GLUT_RIGHT_BUTTON && state == GLUT_DOWN) {
-        cout << "Right Mouse Clicked" << endl;
+        std::cout << "Right Mouse Clicked" << endl;
     }
     
     glutPostRedisplay();
@@ -251,5 +252,4 @@ void ShowText()
     glPopMatrix();
     glMatrixMode(GL_MODELVIEW);
 }
-
 

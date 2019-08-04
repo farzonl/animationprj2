@@ -202,14 +202,14 @@ Simulator::Simulator() : ps(), methodId(0) {
     // initialize the particles
     mParticles.resize(2);
     reset();
-    std::cout <<"####### START CONSTRUCTOR ###########" << std::endl;
-    std::cout << "P1 mAccumulatedForce before: \n" << mParticles[0].mAccumulatedForce << std::endl;
-    std::cout << "P2 mAccumulatedForce before: \n" << mParticles[2].mAccumulatedForce << std::endl;
-    std::cout << "Particle velocity 1 before: \n" << mParticles[0].mVelocity << std::endl;
-    std::cout << "Particle velocity 2 before: \n"  << mParticles[1].mVelocity << std::endl;
-    std::cout << "Particle pos 1 before: \n" << mParticles[0].mPosition << std::endl;
-    std::cout << "Particle pos 2 before: \n"  << mParticles[1].mPosition << std::endl;
-    std::cout <<"####### END CONSTRUCTOR ###########" << std::endl;
+    //std::cout <<"####### START CONSTRUCTOR ###########" << std::endl;
+    //std::cout << "P1 mAccumulatedForce before: \n" << mParticles[0].mAccumulatedForce << std::endl;
+    //std::cout << "P2 mAccumulatedForce before: \n" << mParticles[2].mAccumulatedForce << std::endl;
+    //std::cout << "Particle velocity 1 before: \n" << mParticles[0].mVelocity << std::endl;
+    //std::cout << "Particle velocity 2 before: \n"  << mParticles[1].mVelocity << std::endl;
+    //std::cout << "Particle pos 1 before: \n" << mParticles[0].mPosition << std::endl;
+    //std::cout << "Particle pos 2 before: \n"  << mParticles[1].mPosition << std::endl;
+    //std::cout <<"####### END CONSTRUCTOR ###########" << std::endl;
 
     ps.initW(mParticles);
     //std::cout << "calc W: \n" << ps.W << std::endl;

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="terminal" baseProfile="full" viewBox="0 0 528 172" width="528" version="1.1">
+    <defs>
+        <termtosvg:template_settings xmlns:termtosvg="https://github.com/nbedos/termtosvg">
+            <termtosvg:screen_geometry columns="66" rows="10"/>
+            <termtosvg:animation type="css"/>
+        </termtosvg:template_settings>
+        <style type="text/css" id="generated-style"><![CDATA[#screen {
+                font-family: 'DejaVu Sans Mono', monospace;
+                font-style: normal;
+                font-size: 14px;
+            }
+
+        text {
+            dominant-baseline: text-before-edge;
+            white-space: pre;
+        }
+    
+            :root {
+                --animation-duration: 9010ms;
+            }
+
+            @keyframes roll {
+                0.000%{transform:translateY(0px)}
+6.160%{transform:translateY(-204px)}
+9.445%{transform:translateY(-408px)}
+13.518%{transform:translateY(-612px)}
+17.214%{transform:translateY(-816px)}
+26.792%{transform:translateY(-1020px)}
+27.103%{transform:translateY(-1224px)}
+41.598%{transform:translateY(-1428px)}
+50.011%{transform:translateY(-1632px)}
+50.055%{transform:translateY(-1836px)}
+74.861%{transform:translateY(-2040px)}
+88.901%{transform:translateY(-2244px)}
+100.000%{transform:translateY(-2244px)}
+            }
+
+            #screen_view {
+                animation-duration: 9010ms;
+                animation-iteration-count:infinite;
+                animation-name:roll;
+                animation-timing-function: steps(1,end);
+                animation-fill-mode: forwards;
+            }
+        ]]></style>
+        <style type="text/css" id="user-style">
+            /* gjm8 color theme (source: https://terminal.sexy/) */
+            .foreground {fill: #c5c5c5;}
+            .background {fill: #1c1c1c;}
+            .color0 {fill: #1c1c1c;}
+            .color1 {fill: #ff005b;}
+            .color2 {fill: #cee318;}
+            .color3 {fill: #ffe755;}
+            .color4 {fill: #048ac7;}
+            .color5 {fill: #833c9f;}
+            .color6 {fill: #0ac1cd;}
+            .color7 {fill: #e5e5e5;}
+            .color8 {fill: #1c1c1c;}
+            .color9 {fill: #ff005b;}
+            .color10 {fill: #cee318;}
+            .color11 {fill: #ffe755;}
+            .color12 {fill: #048ac7;}
+            .color13 {fill: #833c9f;}
+            .color14 {fill: #0ac1cd;}
+            .color15 {fill: #e5e5e5;}
+        </style>
+    </defs>
+    <svg id="screen" width="528" height="170" viewBox="0 0 528 170" preserveAspectRatio="xMidYMin slice">
+        <rect class="background" height="100%" width="100%" x="0" y="0"/><defs><g id="g1"><text class="foreground" textLength="80" x="0">bash-3.2$ </text><text class="background" textLength="8" x="80"> </text></g><g id="g2"><text class="foreground" textLength="88" x="0">bash-3.2$ .</text><text class="background" textLength="8" x="88"> </text></g><g id="g3"><text class="foreground" textLength="96" x="0">bash-3.2$ ./</text><text class="background" textLength="8" x="96"> </text></g><g id="g4"><text class="foreground" textLength="104" x="0">bash-3.2$ ./m</text><text class="background" textLength="8" x="104"> </text></g><g id="g5"><text class="foreground" textLength="168" x="0">bash-3.2$ ./main.out </text><text class="background" textLength="8" x="168"> </text></g><g id="g6"><text class="foreground" textLength="168" x="0">bash-3.2$ ./main.out </text></g><g id="g7"><text class="background" textLength="8" x="0"> </text></g><g id="g8"><text class="foreground" textLength="232" x="0">pick your integration method.</text></g><g id="g9"><text class="foreground" textLength="160" x="0">1 for explicit euler</text></g><g id="g10"><text class="foreground" textLength="160" x="0">2 for implicit euler</text></g><g id="g11"><text class="foreground" textLength="376" x="0">0 or any key other key not defined for midpoint</text></g><g id="g12"><text class="foreground" textLength="8" x="0">1</text><text class="background" textLength="8" x="8"> </text></g><g id="g13"><text class="foreground" textLength="8" x="0">1</text></g><g id="g14"><text class="foreground" textLength="216" x="0">The value you entered is: 1</text></g><g id="g15"><text class="foreground" textLength="112" x="0">bash-3.2$ exit</text></g></defs><g id="screen_view"><g><rect class="foreground" height="17" width="8" x="80" y="0"/><use y="0" xlink:href="#g1"/></g><g><rect class="foreground" height="17" width="8" x="88" y="204"/><use y="204" xlink:href="#g2"/></g><g><rect class="foreground" height="17" width="8" x="96" y="408"/><use y="408" xlink:href="#g3"/></g><g><rect class="foreground" height="17" width="8" x="104" y="612"/><use y="612" xlink:href="#g4"/></g><g><rect class="foreground" height="17" width="8" x="168" y="816"/><use y="816" xlink:href="#g5"/></g><g><use y="1020" xlink:href="#g6"/><rect class="foreground" height="17" width="8" x="0" y="1037"/><use y="1037" xlink:href="#g7"/></g><g><use y="1224" xlink:href="#g6"/><use y="1241" xlink:href="#g8"/><use y="1258" xlink:href="#g9"/><use y="1275" xlink:href="#g10"/><use y="1292" xlink:href="#g11"/><rect class="foreground" height="17" width="8" x="0" y="1309"/><use y="1309" xlink:href="#g7"/></g><g><use y="1428" xlink:href="#g6"/><use y="1445" xlink:href="#g8"/><use y="1462" xlink:href="#g9"/><use y="1479" xlink:href="#g10"/><use y="1496" xlink:href="#g11"/><rect class="foreground" height="17" width="8" x="8" y="1513"/><use y="1513" xlink:href="#g12"/></g><g><use y="1632" xlink:href="#g6"/><use y="1649" xlink:href="#g8"/><use y="1666" xlink:href="#g9"/><use y="1683" xlink:href="#g10"/><use y="1700" xlink:href="#g11"/><use y="1717" xlink:href="#g13"/><rect class="foreground" height="17" width="8" x="0" y="1734"/><use y="1734" xlink:href="#g7"/></g><g><use y="1836" xlink:href="#g6"/><use y="1853" xlink:href="#g8"/><use y="1870" xlink:href="#g9"/><use y="1887" xlink:href="#g10"/><use y="1904" xlink:href="#g11"/><use y="1921" xlink:href="#g13"/><use y="1938" xlink:href="#g14"/><rect class="foreground" height="17" width="8" x="0" y="1955"/><use y="1955" xlink:href="#g7"/></g><g><use y="2040" xlink:href="#g6"/><use y="2057" xlink:href="#g8"/><use y="2074" xlink:href="#g9"/><use y="2091" xlink:href="#g10"/><use y="2108" xlink:href="#g11"/><use y="2125" xlink:href="#g13"/><use y="2142" xlink:href="#g14"/><rect class="foreground" height="17" width="8" x="80" y="2159"/><use y="2159" xlink:href="#g1"/></g><g><use y="2244" xlink:href="#g6"/><use y="2261" xlink:href="#g8"/><use y="2278" xlink:href="#g9"/><use y="2295" xlink:href="#g10"/><use y="2312" xlink:href="#g11"/><use y="2329" xlink:href="#g13"/><use y="2346" xlink:href="#g14"/><use y="2363" xlink:href="#g15"/><rect class="foreground" height="17" width="8" x="0" y="2380"/><use y="2380" xlink:href="#g7"/></g></g></svg>
+</svg>
