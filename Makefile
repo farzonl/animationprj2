@@ -17,8 +17,12 @@ SOURCES=$(shell find . -name '*.cpp')
 HEADERS=$(shell find . -name '*.h')
 OBJS =$(SOURCES:%.cpp=%.o)
 
+all: initDep
 all: $(TARGET)
-					
+
+initDep :
+	bash uzDep.sh
+
 $(TARGET): $(OBJS) $(HEADERS)
 	$(CXX)  $(CFLAGS) -o $@ $(OBJS) $(LIBS_GL)
 
