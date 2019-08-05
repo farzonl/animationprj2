@@ -4,3 +4,4 @@ main.out
 *.gcno
 *.gcov
 *.gcda
+Eigen/
